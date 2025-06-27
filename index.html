@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Breaker Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Code Breaker</h1>
+
+    <div id="setup" class="card">
+      <label for="playerName">Enter Your Name:</label>
+      <input type="text" id="playerName" placeholder="Your Name" required />
+
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy (3 letters)</option>
+        <option value="medium">Medium (4 letters)</option>
+        <option value="hard">Hard (5 letters)</option>
+      </select>
+
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="gameArea" class="card hidden">
+      <p><strong>Player:</strong> <span id="playerDisplay"></span></p>
+      <p><strong>Mode:</strong> <span id="modeDisplay"></span></p>
+      <p><strong>Word Length:</strong> <span id="lengthDisplay"></span></p>
+
+      <input type="text" id="guessInput" placeholder="Enter your guess" maxlength="5" />
+      <button id="guessBtn">Submit Guess</button>
+
+      <div id="log"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
