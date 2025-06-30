@@ -22,6 +22,7 @@
       </select>
 
       <button id="startBtn">Start Game</button>
+      <button id="showRulesBtn">Show Rules</button>
     </div>
 
     <div id="gameArea" class="card hidden">
@@ -33,6 +34,21 @@
       <button id="guessBtn">Submit Guess</button>
 
       <div id="log"></div>
+    </div>
+  </div>
+
+  <!-- Rules Modal (initially hidden) -->
+  <div id="rulesModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>Choose a difficulty: Easy (3-letter), Medium (4-letter), or Hard (5-letter).</li>
+        <li>The computer selects a secret word.</li>
+        <li>Guess the word by entering a word of the correct length.</li>
+        <li>Feedback will show how many letters are correct.</li>
+        <li>Try to guess the correct word as quickly as possible!</li>
+      </ul>
+      <button id="closeRulesBtn">Close</button>
     </div>
   </div>
 

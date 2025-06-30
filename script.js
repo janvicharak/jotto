@@ -46,7 +46,6 @@ document.getElementById("guessBtn").addEventListener("click", () => {
   const secretCopy = secretWord.split("");
   const usedPositions = [];
 
-  // Count correct letters (exact + misplaced)
   for (let i = 0; i < currentLength; i++) {
     if (guess[i] === secretWord[i]) {
       correctLetters++;
@@ -54,7 +53,6 @@ document.getElementById("guessBtn").addEventListener("click", () => {
     }
   }
 
-  // Check remaining correct letters (wrong position)
   for (let i = 0; i < currentLength; i++) {
     if (!usedPositions.includes(i) && secretWord.includes(guess[i]) && guess[i] !== secretWord[i]) {
       const idx = secretWord.indexOf(guess[i]);
@@ -79,4 +77,13 @@ document.getElementById("guessBtn").addEventListener("click", () => {
   }
 
   document.getElementById("guessInput").value = "";
+});
+
+// Modal rules toggle
+document.getElementById("showRulesBtn").addEventListener("click", () => {
+  document.getElementById("rulesModal").classList.remove("hidden");
+});
+
+document.getElementById("closeRulesBtn").addEventListener("click", () => {
+  document.getElementById("rulesModal").classList.add("hidden");
 });
