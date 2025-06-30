@@ -70,6 +70,15 @@ button:hover {
   display: none;
 }
 
+.error-message {
+  background-color: #ffdddd;
+  color: #b20000;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #ff4d4d;
+}
+
 /* Modal Styles */
 .modal {
   position: fixed;
@@ -81,13 +90,12 @@ button:hover {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  display: none; /* Hide by default */
+  display: none;
 }
 
 .modal:not(.hidden) {
-  display: flex; /* Only show when NOT hidden */
+  display: flex;
 }
-
 
 .modal-content {
   background: #fff;
