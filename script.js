@@ -273,5 +273,22 @@ document.getElementById("showRulesBtn").addEventListener("click", () => {
 document.getElementById("closeRulesBtn").addEventListener("click", () => {
   document.getElementById("rulesModal").classList.add("hidden");
 });
+ 
+document.getElementById("revealBtn").addEventListener("click", () => {
+  const log = document.getElementById("log");
+  const reveal = document.createElement("div");
+  reveal.innerHTML = `<strong>❗ The correct word was: ${secretWord.toUpperCase()}</strong>`;
+  reveal.style.color = "#f55";
+  log.prepend(reveal);
+  document.getElementById("guessBtn").disabled = true;
+});
 
+document.getElementById("restartBtn").addEventListener("click", () => {
+  document.getElementById("gameArea").classList.add("hidden");
+  document.getElementById("setup").classList.remove("hidden");
+  document.getElementById("guessInput").value = "";
+  document.getElementById("log").innerHTML = "";
+  document.getElementById("guessBtn").disabled = false;
+  document.getElementById("errorMsg").classList.add("hidden");
+});
 
