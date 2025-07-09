@@ -293,9 +293,9 @@ document.getElementById("restartBtn").addEventListener("click", () => {
 });*/
 
 const words = {
-  easy: ["cat", "dog", "sun", "box", "hat", "pen", "run", "lip", "fan", "net", "bat"],
-  medium: ["film", "bank", "dust", "cord", "maze", "jump", "grow", "mind", "bold", "tent", "clip"],
-  hard: ["plant", "bride", "shock", "trend", "lucky", "grind", "frost", "blame", "night", "stone", "climb"]
+  easy: ["cat", "dog", "sun", "box", "hat", "pen", "run", "lip", "fan", "net", "bat","wall", "well", "web", "war", "ear", "toe", "eye", "ice"],
+  medium: ["film", "bank", "dust", "cord", "maze", "jump", "grow", "mind", "bold", "tent", "clip", "frog", "boat", "wave", "rain", "ring", "game"],
+  hard: ["plant", "bride", "shock", "trend", "lucky", "grind", "frost", "blame", "night", "stone", "climb", "ivory", "blind", "beach", "plane", "chair", "brush", "paper"]
 };
 
 let secretWord = "";
