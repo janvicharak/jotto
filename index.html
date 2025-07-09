@@ -11,30 +11,15 @@
     <h1>Code Breaker</h1>
 
     <div id="setup" class="card">
-      <label for="playerName">Enter Your Name:</label>
-      <input type="text" id="playerName" placeholder="Your Name" required />
-
-      <label for="difficulty">Select Difficulty:</label>
-      <select id="difficulty">
-        <option value="easy">Easy (3 letters)</option>
-        <option value="medium">Medium (4 letters)</option>
-        <option value="hard">Hard (5 letters)</option>
-      </select>
-
       <div id="errorMsg" class="error-message hidden"></div>
-
       <button id="startBtn">Start Game</button>
       <button id="showRulesBtn">Show Rules</button>
     </div>
 
     <div id="gameArea" class="card hidden">
-      <p><strong>Player:</strong> <span id="playerDisplay"></span></p>
-      <p><strong>Mode:</strong> <span id="modeDisplay"></span></p>
-      <p><strong>Word Length:</strong> <span id="lengthDisplay"></span></p>
-
+      <p><strong>Word Length:</strong> <span id="lengthDisplay">5</span></p>
       <input type="text" id="guessInput" placeholder="Enter your guess" maxlength="5" />
       <button id="guessBtn">Submit Guess</button>
-
       <div id="log"></div>
     </div>
   </div>
@@ -44,11 +29,10 @@
     <div class="modal-content">
       <h2>Game Rules</h2>
       <ul>
-        <li>Choose a difficulty: Easy (3-letter), Medium (4-letter), or Hard (5-letter).</li>
-        <li>The computer selects a secret word.</li>
-        <li>Guess the word by entering a word of the correct length.</li>
-        <li>Feedback will show how many letters are correct.</li>
-        <li>Try to guess the correct word as quickly as possible!</li>
+        <li>The computer selects a secret 5-letter word.</li>
+        <li>Guess the word by entering a word of the same length.</li>
+        <li>You will see how many letters are correct (in the right place or present).</li>
+        <li>Try to guess the word in as few attempts as possible!</li>
       </ul>
       <button id="closeRulesBtn">Close</button>
     </div>
