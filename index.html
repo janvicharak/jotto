@@ -17,30 +17,29 @@
     </div>
 
     <div id="gameArea" class="card hidden">
-  <p><strong>Word Length:</strong> <span id="lengthDisplay">5</span></p>
-  <input type="text" id="guessInput" placeholder="Enter your guess" maxlength="5" />
-  <button id="guessBtn">Submit Guess</button>
-  <button id="revealBtn">Reveal / Give Up</button>
-  <button id="restartBtn">Restart Game</button> <!-- ✅ NEW BUTTON -->
-  <div id="log"></div>
-</div>
-
-
-
-  <!-- Rules Modal -->
-  <div id="rulesModal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Game Rules</h2>
-      <ul>
-        <li>The computer selects a secret 5-letter word.</li>
-        <li>Guess the word by entering a word of the same length.</li>
-        <li>You will see how many letters are correct (in the right place or present).</li>
-        <li>Try to guess the word in as few attempts as possible!</li>
-      </ul>
-      <button id="closeRulesBtn">Close</button>
+      
+      <p><strong>Word Length:</strong> <span id="lengthDisplay"></span></p>
+      <input type="text" id="guessInput" placeholder="Enter your guess" />
+      <button id="guessBtn">Submit Guess</button>
+      <button id="revealBtn">Reveal / Give Up</button>
+      <button id="restartBtn">Restart Game</button>
+      <div id="log"></div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Rules Modal -->
+    <div id="rulesModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Game Rules</h2>
+        <ul>
+          <li>The computer selects a secret word of 3, 4, or 5 letters.</li>
+          <li>You must guess the word with the correct number of letters.</li>
+          <li>You will be told how many letters are correct.</li>
+          <li>You can give up and see the answer or restart anytime.</li>
+        </ul>
+        <button id="closeRulesBtn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
